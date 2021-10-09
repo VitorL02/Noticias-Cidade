@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    top:0;
+}
+
+body{
+    font-family: 'Trebuchet MS', Helvetica,sans-serif;
+    background: #fff url(../assets/fundo.png) repeat-x;
+}
+
+#container{
+    width: 700px;
+    margin: 0 auto;
+}
+#top{
+padding-top: 25px;
+height: 150px;
+background: url(../assets/detalhe-topo.png) no-repeat right top;
+}
+/* Utiliza o H1 como base para inserir a imagem e manter o texto */
+.logo{
+    width: 150px;
+    height: 66px;
+    background: url(../assets/logo.png) no-repeat center;
+    /* Tira o noticia cidade mas mantem o texto  para leitura de acessibilidade */
+    text-indent: -3000px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#top ul{
+    margin-top: 30px;
+   background: #b10333;
+   float :left;
+}
+#top ul li{
+    float: left;
+}
+#top ul a{
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.1em;
+    padding: 0.5em 1.35em;
+    background: url(../assets/divisor.png)no-repeat left center;
+}
+/* Remove o backgroud do primeiro elemento a,que nao pode ter divisor */
+#top ul .primeiro a {
+background: none;
+}
+
+#top ul a:hover{
+    color: #69001d;
+}
+/* Altera a marcação da pagina selecionada */
+body.home #navegacao a#home,
+body.brasil #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.fotos #navegacao a#fotos,
+body.internacional #navegacao a#internacional,
+body.cultura #navegacao a#cultura{
+color: #fff;
+background: #de003e;
+cursor: text;
+}
