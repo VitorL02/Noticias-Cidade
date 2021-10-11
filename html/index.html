@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/index_style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index_style.css">
     <title>Noticias da Cidade</title>
 </head>
-    <body   class = 'home'>
+
+<body class='home'>
     <div id="container">
 
-            <div id="top">
-                <!-- Utiliza a logo da classe no h1 para manter a acessibilidade de leitores de tela -->
-                <h1 class = 'logo'>Noticias Cidade</h1>
-                    <ul id = "navegacao">
-                        <li class="primeiro">
-                            <a id = 'home' href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a id = 'economia' href="economia.html">Econômia</a>
-                        </li>
-                        <li>
-                            <a id = 'saude' href="saude.html">Saude</a>
-                        </li>
-                        <li>
-                            <a id = 'fotos' href="fotos.html">Fotos</a>
-                        </li>
-                        <li>
-                            <a id = 'internacional' href="internacional.html">Internacional</a>
-                        </li>
-                        <li>
-                            <a id = 'cultura' href="cultura.html">Cultura Local</a>
-                        </li>
-                    </ul>
-            </div>
-                <div id="conteudo">
-                    <div id ="primario">Primario</div>
-                    <div id="secundario">Secundario</div>
-                    
-                        <div id = "lateral">
-                            <div class = 'caixa'>
-                                <h2>Entrevistas</h2>
-                                    <div class="caixa-conteudo">
-                                        Conteudo
-                                    </div>
+        <div id="top">
+            <!-- Utiliza a logo da classe no h1 para manter a acessibilidade de leitores de tela -->
+            <h1 class='logo'>Noticias Cidade</h1>
+            <ul id="navegacao">
+                <li class="primeiro">
+                    <a id='home' href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id='economia' href="economia.html">Econômia</a>
+                </li>
+                <li>
+                    <a id='saude' href="saude.html">Saude</a>
+                </li>
+                <li>
+                    <a id='fotos' href="fotos.html">Fotos</a>
+                </li>
+                <li>
+                    <a id='internacional' href="internacional.html">Internacional</a>
+                </li>
+                <li>
+                    <a id='cultura' href="cultura.html">Cultura Local</a>
+                </li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <div id="primario">Primario</div>
+            <div id="secundario">Secundario</div>
+
+            <div id="lateral">
+                <div class='caixa'>
+                    <h2>Entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <ul>
+                            <li><a href="">Vitor Lucas Crispim</a></li>
+                            <li><a href="">Eduardo Cunha</a></li>
+                            <li><a href="">Varley Crispim</a></li>
+                            <li><a href="">Jaqueline Crispim</a></li>
+                            <li><a href="">Mateus Crispim</a></li>
+                            <li><a href="">Lucas Gabriel</a></li>
+                            <li><a href="">José</a></li>
+                            <li><a href="">Clara Aredes</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class='caixa'>
+                    <h2>Cadastro</h2>
+                    <div class="caixa-conteudo">
+                        <form>
+                            <div>
+                                <label for="email">Email : </label>
+                                <input type="email" name="email" id="email" placeholder="E-mail">
                             </div>
-                        </div>    
+                            <div>
+                                <input class= 'submit' type="submit" name="Cadastrar" value="Cadastrar">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-    </div> 
-        <div id="container-rodape" style="clear: both;">
-                <div id="rodape">
-                    &copy; Copyright 2000-2018 Noticias Cidade
-                </div>
-        </div>  
-    </body>
+            </div>
+        </div>
+    </div>
+    <div id="container-rodape" style="clear: both;">
+        <div id="rodape">
+            &copy; Copyright 2000-2018 Noticias Cidade
+        </div>
+    </div>
+</body>
+
 </html>
