@@ -8,6 +8,42 @@ body {
   background: #fff url(../assets/fundo.png) repeat-x;
 }
 
+label {
+  cursor: pointer;
+  display: block;
+}
+input {
+  width: 125px;
+  background-color: #fff;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #add8e6;
+  margin-bottom: 3px;
+}
+input.submit {
+  width: 80px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+}
+input.submit:hover {
+  background-color: #880127;
+  border: 2px solid #6d011f;
+}
+
+h2 {
+  padding: 5px;
+  font-size: 1.1em;
+  background: #294c71;
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 #container {
   width: 750px;
   margin: 0 auto;
@@ -17,20 +53,7 @@ body {
   height: 150px;
   background: url(../assets/detalhe-topo.png) no-repeat right top;
 }
-/* Utiliza o H1 como base para inserir a imagem e manter o texto */
-.logo {
-  width: 150px;
-  height: 66px;
-  background: url(../assets/logo.png) no-repeat center;
-  /* Tira o noticia cidade mas mantem o texto  para leitura de acessibilidade */
-  text-indent: -3000px;
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 #top ul {
   margin-top: 30px;
   background: #b10333;
@@ -84,7 +107,6 @@ body.cultura #navegacao a#cultura {
   float: left;
   /* Utilizando margens para posicionar o id lateral a esquerda  */
   margin: 0 0 20px 195px; /*Os 195px são 180 px de espaço para area lateral + 15 de espaçamento,sabendo que todo o container tem 750px*/
-  background: brown;
 }
 
 /* Muda a distribuição para as diferente colunas do site,no caso da pagina fotos são usadas 1 coluna e na pagina de entrevista são usadas duas */
@@ -101,7 +123,6 @@ body.cultura #navegacao a#cultura {
   width: 270px;
   float: left;
   margin: 0 0 20px 15px;
-  background: blue;
 }
 
 #container-rodape {
@@ -115,17 +136,6 @@ body.cultura #navegacao a#cultura {
   margin: 0 auto;
 }
 
-.caixa {
-  margin: 10px 0;
-  padding: 5px;
-  background: #f3f3f3 url(../assets/fundo-caixa.png);
-}
-
-.caixa-conteudo {
-  padding: 5px;
-  background: #fff;
-  margin-top: 5px;
-}
 #lateral ul a {
   text-decoration: none;
   font-size: 0.9em;
@@ -141,33 +151,42 @@ body.cultura #navegacao a#cultura {
   /* Da a movimentação quando o hover e feito */
   padding-left: 20px;
 }
-
-label {
-  cursor: pointer;
-  display: block;
+h3 {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
 }
-input {
-  width: 125px;
-  background-color: #fff;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #add8e6;
-  margin-bottom: 3px;
-}
-input.submit {
-  width: 80px;
+.destaque h3 {
+  background: #b10333;
   color: #fff;
-  background-color: #b10333;
-  border: 2px solid #870529;
 }
-input.submit:hover {
-  background-color: #880127;
-  border: 2px solid #6d011f;
+.entrevista h3 {
+  background: #de003e;
+  color: #000;
 }
 
-h2 {
+img.imagem-destaque {
+  width: 98%;
+  border: 3px solid #dfdfdf;
+}
+
+/* Utiliza o H1 como base para inserir a imagem e manter o texto */
+.logo {
+  width: 150px;
+  height: 66px;
+  background: url(../assets/logo.png) no-repeat center;
+  /* Tira o noticia cidade mas mantem o texto  para leitura de acessibilidade */
+  text-indent: -3000px;
+}
+.caixa {
+  margin: 10px 0;
   padding: 5px;
-  font-size: 1.1em;
-  background: #294c71;
-  color: #fff;
+  background: #f3f3f3 url(../assets/fundo-caixa.png);
+}
+
+.caixa-conteudo {
+  padding: 5px;
+  background: #fff;
+  margin-top: 5px;
 }
